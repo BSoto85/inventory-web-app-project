@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./scripts/main.js"></script>
+  <title>Treats By Brenda</title>
+</head>
+<body>
+  <header>
+    <h1>Treats By Brenda</h1>
+  </header>
+  <div>
+    <h2>Create A New Baked Good</h2>
+    <form>
+      <label for="good-type"
+        >Good Type
+        <select name="goods" required>
+          <option value="">Please select an option...</option>
+          <option value="donut">Donut</option>
+          <option value="cupcake">Cupcake</option>
+          <option value="muffin">Muffin</option>
+          <option value="cookie">Cookie</option>
+          <option value="pie">Pie</option>
+          <option value="pastry">Pastry</option>
+        </select>
+      </label>
+      <label for="goods"
+        >Good Name
+        <input type="text" name="good-name" id="good-name" required>
+      </label>
+      <label for="flavors"
+        >Flavor
+        <select name="flavors" id="flavors" required>
+          <option value="">Please select an option...</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="strawberry">Strawberry</option>
+          <option value="lemon">Lemon</option>
+          <option value="peach">Peach</option>
+          <option value="apple">Apple</option>
+          <option value="blueberry">Blueberry</option>
+        </select>
+      </label>
+      <label for="price"
+        >Price In Cents
+        <input type="number" name="price" id="price">
+      </label>
+      <label for="in-stock"
+        >In Stock
+        <input type="radio" name="in-stock" id="yes">
+        <label for="in-stock">Yes</label>
+        <input type="radio" name="in-stock" id="no">
+        <label for="in-stock">No</label>
+      </label>
+      <label for="image-of-good"
+        >Image of Good
+        <input type="url" name="image-of-good" id="image-of-good">
+      </label>
+      <label for="calories"
+        >Calories
+        <input type="number" name="calories" id="calories">
+      </label>
+      <label for="allergen-info"
+        >Allergen Info
+        <input type="checkbox" name="eggs" id="eggs">
+        <label for="eggs">Eggs</label>
+        <input type="checkbox" name="dairy" id="dairy">
+        <label for="dairy">Dairy</label>
+        <input type="checkbox" name="peanuts" id="peanuts">
+        <label for="peanuts">Peanuts</label>
+        <input type="checkbox" name="tree-nuts" id="tree-nuts">
+        <label for="tree-nuts">Tree Nuts</label>
+        <input type="checkbox" name="gluten" id="gluten">
+        <label for="gluten">Gluten</label>
+        <input type="checkbox" name="strawberries" id="strawberries">
+        <label for="strawberries">Strawberries</label>
+        <input type="checkbox" name="cinnamon" id="cinnamon">
+        <label for="cinnamon">Cinnamon</label>
+      </label>
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </div>
+</body>
+</html>
