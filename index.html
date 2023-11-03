@@ -10,6 +10,7 @@
 <body>
   <header>
     <h1>Treats By Brenda</h1>
+    <p>Make today a sweet one...</p>
   </header>
   <div>
     <h2>Create A New Baked Good</h2>
@@ -26,7 +27,7 @@
           <option value="pastry">Pastry</option>
         </select>
       </label>
-      <label for="goods"
+      <label for="good-name"
         >Good Name
         <input type="text" name="good-name" id="good-name" required>
       </label>
@@ -50,9 +51,9 @@
       <label for="in-stock"
         >In Stock
         <input type="radio" name="in-stock" id="yes">
-        <label for="in-stock">Yes</label>
+        <label class="in-stock" for="in-stock">Yes</label>
         <input type="radio" name="in-stock" id="no">
-        <label for="in-stock">No</label>
+        <label class="in-stock" for="in-stock">No</label>
       </label>
       <label for="image-of-good"
         >Image of Good
@@ -65,19 +66,19 @@
       <label for="allergen-info"
         >Allergen Info
         <input type="checkbox" name="eggs" id="eggs">
-        <label for="eggs">Eggs</label>
+        <label class="checkbox" for="eggs">Eggs</label>
         <input type="checkbox" name="dairy" id="dairy">
-        <label for="dairy">Dairy</label>
+        <label class="checkbox" for="dairy">Dairy</label>
         <input type="checkbox" name="peanuts" id="peanuts">
-        <label for="peanuts">Peanuts</label>
+        <label class="checkbox" for="peanuts">Peanuts</label>
         <input type="checkbox" name="tree-nuts" id="tree-nuts">
-        <label for="tree-nuts">Tree Nuts</label>
+        <label class="checkbox" for="tree-nuts">Tree Nuts</label>
         <input type="checkbox" name="gluten" id="gluten">
-        <label for="gluten">Gluten</label>
+        <label class="checkbox" for="gluten">Gluten</label>
         <input type="checkbox" name="strawberries" id="strawberries">
-        <label for="strawberries">Strawberries</label>
+        <label class="checkbox" for="strawberries">Strawberries</label>
         <input type="checkbox" name="cinnamon" id="cinnamon">
-        <label for="cinnamon">Cinnamon</label>
+        <label class="checkbox" for="cinnamon">Cinnamon</label>
       </label>
       <button type="submit">Submit Form</button>
       <button type="reset">Reset Form</button>
