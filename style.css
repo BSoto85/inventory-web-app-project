@@ -1,7 +1,3 @@
-/* * {
-  margin: 0 auto;
-} */
-
 body {
   font-family: fantasy;
   color: rebeccapurple;
@@ -74,13 +70,17 @@ form {
   background-color: aquamarine;
 }
 
-input[type=number] {
+input[type=number], input[type=text] {
   border: 2px solid lightcyan;
   border-radius: 7px;
   background-color: lightcyan;
   font-family: fantasy;
   text-align: center;
   width: 10%;
+}
+
+input[type=text] {
+  width: 25%;
 }
 
 input[type=checkbox] {
@@ -94,4 +94,32 @@ select {
   border-radius: 7px;
   text-align: center;
   width: 25%;
+}
+
+ul {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+}
+
+li {
+  display: block;
+  border: 4px solid lightcyan;
+  background-color: pink;
+  border-radius: 15px;
+}
+
+
+
+@media (max-width: 780px) {
+  .goods ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .goods ul {
+    grid-template-columns: 1fr;
+  }
 }
