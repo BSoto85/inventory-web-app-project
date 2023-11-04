@@ -14,9 +14,9 @@ function bakedGoodTemplate(image, name, flavors, price) {
   })
   if (name && flavors && price) {
     li.innerHTML = 
-    `<p>${name}</p>
-    <p>${flavors}</p>
-    <p>$${(price/100).toFixed(2)}</p>`
+    `<p>Good: ${name}</p>
+    <p>Flavor: ${flavors}</p>
+    <p>Price: $${(price/100).toFixed(2)}</p>`
     li.append(removeButton);
     li.prepend(img)
   }

@@ -17,7 +17,7 @@
     <h2>Create A New Baked Good</h2>
     <form>
       <label for="type"
-        >Good Type:
+        >Good Type: <span>*</span>
         <select name="type" id="type" required>
           <option value="">Please select an option...</option>
           <option value="donut">Donut</option>
@@ -29,11 +29,11 @@
         </select>
       </label>
       <label for="name"
-        >Good Name
-        <input name="name" id="name" type="text">
+        >Good Name: <span>*</span>
+        <input name="name" id="name" type="text" required>
       </label>
       <label for="flavors"
-        >Flavor:
+        >Flavor: <span>*</span>
         <select name="flavors" id="flavors" required>
           <option value="">Please select an option...</option>
           <option value="vanilla">Vanilla</option>
@@ -47,14 +47,14 @@
         </select>
       </label>
       <label for="price"
-        >Price In Cents:
+        >Price In Cents: <span>*</span>
         <input type="number" name="price" id="price">
       </label>
       <label for="in-stock"
-        >In Stock:
-        <input type="radio" name="in-stock" id="yes">
+        >In Stock: <span>*</span>
+        <input type="radio" name="in-stock" id="yes" required>
         <label class="in-stock" for="in-stock">Yes</label>
-        <input type="radio" name="in-stock" id="no">
+        <input type="radio" name="in-stock" id="no" required>
         <label class="in-stock" for="in-stock">No</label>
       </label>
       <label for="calories"

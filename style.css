@@ -31,7 +31,14 @@ p {
   margin-top: 0;
   display: block;
   text-align: center;
+}
+
+header p {
   font-family: cursive;
+}
+
+li p {
+  margin: 5px;
 }
 
 h2 {
@@ -60,10 +67,11 @@ form {
   margin: 0 auto;
   display: inline-flex;
   background-color: lightcyan;
-  width: 15%;
+  width: 20%;
   justify-content: center;
   border: 2px solid lightcyan;
   border-radius: 7px;
+  text-align: center;
 }
 
 .submit-button:hover, .reset-button:hover, .remove-button:hover {
@@ -108,16 +116,25 @@ li {
   border: 4px solid lightcyan;
   background-color: pink;
   border-radius: 15px;
-  font-family: fantasy;
 }
 
 img {
+  margin: auto;
+  display: block;
   width: 100px;
   height: 100px;
+  margin-top: 5px;
 }
 
 .remove-button {
+  display: block;
   margin-bottom: 5px;
+  align-content: center;
+  padding: 0;
+}
+
+span {
+  color: red;
 }
 
 @media (max-width: 780px) {
