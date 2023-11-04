@@ -45,7 +45,8 @@ function createStockButton() {
       stockButton.textContent = 'Out of Stock'
       stockButton.style.backgroundColor = 'red'
     } else {
-      stockButton.textContent === 'In Stock'
+      stockButton.textContent = 'In Stock'
+      stockButton.style.backgroundColor = 'aquamarine'
     }
   })
   return stockButton
