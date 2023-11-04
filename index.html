@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="./scripts/main.js"></script>
   <script defer src="./scripts/object.js"></script>
+  <script defer src="./scripts/helpers.js"></script>
   <title>Treats By Brenda</title>
 </head>
 <body>
@@ -50,11 +51,11 @@
         >Price In Cents: <span>*</span>
         <input type="number" name="price" id="price">
       </label>
-      <label for="in-stock"
+      <label class="stock" for="in-stock"
         >In Stock: <span>*</span>
-        <input type="radio" name="in-stock" id="yes" required>
+        <input type="radio" name="in-stock" id="in-stock" required>
         <label class="in-stock" for="in-stock">Yes</label>
-        <input type="radio" name="in-stock" id="no" required>
+        <input type="radio" name="in-stock" id="out-of-stock" required>
         <label class="in-stock" for="in-stock">No</label>
       </label>
       <label for="calories"
