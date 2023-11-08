@@ -1,6 +1,6 @@
 const form = document.querySelector('form')
 
-function bakedGoodTemplate(image, name, flavors, price) {
+function bakedGoodTemplate(image, name, flavors, calories, allergens, price) {
   const li = document.createElement("li");
   li.classList.add("baked-good");
   const img = document.createElement('img')
@@ -15,7 +15,10 @@ function bakedGoodTemplate(image, name, flavors, price) {
     li.innerHTML = 
     `<p>Good: ${name}</p>
     <p>Flavor: ${flavors}</p>
+    <p>Calories: ${calories}</p>
+    <p>Allergens: ${allergens}</p>
     <p>Price: $${(price/100).toFixed(2)}</p>`
+    
     li.append(createStockButton())
     li.append(removeButton);
     li.prepend(img)
@@ -25,9 +28,10 @@ function bakedGoodTemplate(image, name, flavors, price) {
 
 form.addEventListener('submit', (event)=>{
   event.preventDefault()
-  const {type, name, flavors, price} = event.target
+  const {type, name, flavors, calories, price} = event.target
   const image = goodsImageObject[type.value]
-  generateBakedGood(image, name.value, flavors.value, price.value)
+  console.log(getAllergens())
+  generateBakedGood(image, name.value, flavors.value, calories.value, getAllergens(), price.value)
   form.reset()
 })
 
@@ -50,4 +54,15 @@ function createStockButton() {
     }
   })
   return stockButton
+}
+
+function getAllergens() {
+  const allergens = document.querySelectorAll('.checkbox')
+  const checkedAllergens = []
+  for(let allergen of allergens) {
+    if(allergen.checked) {
+      checkedAllergens.push(allergen.id)
+    }
+  }
+  return checkedAllergens[0] ? checkedAllergens.join(', ') : 'No allergens listed'
 }
