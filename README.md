@@ -3,7 +3,7 @@
 
 This application is for use in a bakery, allowing employees to input baked goods with corresponding information.
 
-### Install
+### Getting Started
 - Fork and clone repository
 
 ### Features
