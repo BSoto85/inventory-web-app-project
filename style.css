@@ -155,6 +155,14 @@ span {
   color: red;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 @media (max-width: 780px) {
   .goods ul {
     grid-template-columns: 1fr 1fr;

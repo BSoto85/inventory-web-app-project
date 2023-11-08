@@ -26,7 +26,7 @@ A couple of features were implemented as part of stretch goals:
 
 1. In/Out of Stock button changes wording and background color when clicked.
 1. Transition used to ease in/out of card over 0.3 seconds, getting bigger when the mouse hovers over it, and back to normal size when the mouse moves away. The background color also changes when the mouse hovers over the card.
-1. Local Storage used to make input data persist.
+1. Calories and allergens show on mouse-on, and disappear on mouse-off.
 
 ### Web App Link
 https://bsoto85.github.io/inventory-web-app-project/
